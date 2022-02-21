@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;
+    
+}
+.logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 46%;
+    border: 2px solid black;
+}
+.nav-list{
+width: 80%;
+/* background-color: rgb(0, 0, 0); */
+display: flex;
+align-items: center;
+}
+.nav-list li{
+    list-style: none;
+    padding: 20px 28px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav-list li a:hover{
+    color: #cfecc7;
+}
+.rightNav {
+    width: 35%;
+    /* background-color: brown; */
+    text-align: right;
+    padding: 0 23px;
+}
+.rightNav input{
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 3px;
+   
+}
+
+
+.back-ground{
+    background: rgb(0, 0, 0, 0.5) url('../img/back-ground.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstSection{
+    height: 800px;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.secondHalf{
+width: 30%;
+}
+.secondHalf img{
+    width: 68%;
+    border: 2px solid rgb(38 33 33);
+    border-radius: 64px;
+    display: block;
+    margin: auto;
+}
+.text-big{
+    font-size: 30px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.text-small{
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+}
+.btn {
+    padding: 10px 16px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background: none;
+    color: white;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+}
+.btn-sm{
+   padding: 4px 10px ;
+}
+.section{
+    /* height: 360px; */
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    align-items: center;
+    margin: auto;
+}
+.para{
+    padding: 20px 30px;
+    font-family: 'PT Sans', sans-serif;
+}
+.left{
+    flex-direction: row-reverse;
+}
+#contact{
+    height: 400px;
+    background-color: rgb(221, 214, 214);
+}
+.contactBox{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    flex-direction: column;
+}
+.form{
+    max-width: 800px;
+    margin: 20px auto;
+}
+.form input{
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: 6px;
+    margin: 8px;
+}
+#submit{
+    background-color: green;
+}
+#reset{
+    background-color:orange;
+}
+.footer-text{
+    padding: 15px;
+     display: flex; 
+    justify-content: center;
+    font-size: 1.3rem;
+    color: whitesmoke;
+
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 5px;
+    margin: 5px 3px;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 1150px){
+    .navbar{
+        flex-direction: column;
+        transition: all 0.2s ease-out;
+        height: 477px;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    .rightNav{
+        display: flex;
+        flex-direction: column;
+    }
+   #search{
+       padding: 3px 10px;
+   }
+    .btn-sm{
+        width: 50%;
+        margin: 12px auto;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    .form{
+        max-width: 80%;
+        margin: auto;
+    }
+    .para{
+        padding: 0;
+        text-align: left;
+    }
+    
+}
